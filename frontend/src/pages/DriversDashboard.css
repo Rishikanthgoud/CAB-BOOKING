@@ -1,0 +1,97 @@
+.drivers-page {
+  min-height: 100vh;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.drivers-card {
+  width: 100%;
+  max-width: 560px;
+  background: rgba(8, 18, 40, 0.5);
+  border: 1px solid rgba(120, 180, 255, 0.35);
+  border-radius: 20px;
+  padding: 25px 30px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(0, 10, 30, 0.5);
+  transition: all 0.3s ease;
+}
+
+.drivers-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 50px rgba(0, 10, 30, 0.58);
+}
+
+.drivers-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #f3f9ff;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(130, 186, 255, 0.26);
+  margin: 15px 0;
+}
+
+.drivers-empty {
+  margin: 0;
+  color: rgba(205, 229, 255, 0.85);
+}
+
+.drivers-list {
+  display: grid;
+  gap: 12px;
+}
+
+.driver-item {
+  border: 1px solid rgba(120, 180, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(6, 16, 34, 0.48);
+}
+
+.driver-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.driver-row:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-weight: 500;
+  color: rgba(205, 229, 255, 0.85);
+}
+
+.value {
+  font-weight: 600;
+  color: #f2f9ff;
+  text-align: right;
+}
+
+.back-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}

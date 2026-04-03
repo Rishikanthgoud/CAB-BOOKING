@@ -1,0 +1,129 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.book-ride-page {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.book-ride-card {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(8, 18, 40, 0.5);
+  border: 1px solid rgba(120, 180, 255, 0.35);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(0, 10, 30, 0.5);
+  padding: 1.8rem;
+}
+
+.book-ride-header h1 {
+  margin: 0.8rem 0 0;
+  color: #f3f9ff;
+  font-size: 1.8rem;
+}
+
+.book-ride-header p {
+  margin: 0.5rem 0 1.2rem;
+  color: rgba(212, 233, 255, 0.82);
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+}
+
+.book-ride-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.book-ride-form label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: rgba(214, 236, 255, 0.92);
+}
+
+.book-ride-form input {
+  border: 1px solid rgba(120, 180, 255, 0.34);
+  border-radius: 10px;
+  padding: 0.74rem 0.8rem;
+  font-size: 0.98rem;
+  outline: none;
+  background: rgba(5, 15, 35, 0.55);
+  color: #eaf5ff;
+}
+
+.book-ride-form select {
+  border: 1px solid rgba(120, 180, 255, 0.34);
+  border-radius: 10px;
+  padding: 0.74rem 0.8rem;
+  font-size: 0.98rem;
+  outline: none;
+  background: rgba(5, 15, 35, 0.55);
+  color: #eaf5ff;
+  appearance: auto;
+}
+
+.book-ride-form select option {
+  color: #eaf5ff;
+  background: #0b1830;
+}
+
+.book-ride-form input::placeholder {
+  color: rgba(196, 221, 248, 0.62);
+}
+
+.book-ride-form input:focus {
+  border-color: rgba(118, 191, 255, 0.85);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.book-ride-form select:focus {
+  border-color: rgba(118, 191, 255, 0.85);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.book-submit-button {
+  margin-top: 0.4rem;
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.book-submit-button:hover {
+  opacity: 1;
+}
+
+.book-submit-button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.book-status-message {
+  margin: 0.5rem 0 0;
+  font-size: 0.92rem;
+  color: #d2e8ff;
+}

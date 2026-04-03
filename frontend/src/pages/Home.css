@@ -1,0 +1,86 @@
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.welcome-card {
+  width: min(860px, 95vw);
+  padding: clamp(1.5rem, 2vw + 1rem, 3rem);
+  background: rgba(8, 18, 40, 0.48);
+  border: 1px solid rgba(120, 180, 255, 0.38);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(0, 10, 30, 0.55);
+  animation: fadeIn 0.6s ease;
+}
+
+.logo {
+  margin-bottom: 0.9rem;
+  color: #6fb2ff;
+  filter: drop-shadow(0 0 12px rgba(82, 173, 255, 0.8));
+}
+
+.welcome-card h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3.25rem);
+  font-weight: 700;
+  color: #f5fbff;
+  text-shadow: 0 0 18px rgba(150, 210, 255, 0.38);
+}
+
+.subtitle {
+  color: rgba(220, 236, 255, 0.86);
+  margin-top: 0.85rem;
+  margin-bottom: 1.9rem;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+}
+
+.home-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn {
+  min-height: 62px;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@media (max-width: 720px) {
+  .home-buttons {
+    grid-template-columns: 1fr;
+  }
+}
